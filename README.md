@@ -1,0 +1,2 @@
+# Plotly
+JavaScript VS Code
