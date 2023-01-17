@@ -16,14 +16,11 @@ function init() {
   
   init();
 
-  function optionChanged(newSample) {
-    console.log(newSample);
-  }
 // optionChanged() is called from the HTML document and, in turn, calls buildMetadata() and buildCharts()
 // newSample, is the volunteer ID number that is passed to both of these functions
   function optionChanged(newSample) {
     buildMetadata(newSample);
-    buildCharts(newSample);
+    // buildCharts(newSample);
   }
 
 // declare the first of these functions: buildMetadata()
