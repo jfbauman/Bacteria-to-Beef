@@ -32,6 +32,16 @@ function init() {
       var PANEL = d3.select("#sample-metadata");
   
       PANEL.html("");
-      PANEL.append("h6").text(result.location);
+      PANEL.append("h6").text(`ID: ${result.id}`);
+      PANEL.append("h6").text(`ETHNICITY:${result.ethnicity}`);
+      PANEL.append("h6").text(`GENDER: ${result.gender}`);
+      PANEL.append("h6").text(`AGE: ${result.age}`);
+      PANEL.append("h6").text(`LOCATION: ${result.location}`);
+      PANEL.append("h6").text(`BBTYPE: ${result.bbtype}`);
+      PANEL.append("h6").text(`WFREQ: ${result.wfreq}`);
+
     });
   }
+
+// Skill Drill
+//modify the buildMetadata() function to populate the Demographic Info panel with all demographic data when a menu option is selected
